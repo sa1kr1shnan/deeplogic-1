@@ -1,0 +1,121 @@
+Key Data Points for Extraction from Invoice
+Header Information
+
+Invoice Number
+
+Field name: "Invoice No"
+Format: Numeric string (e.g., "123100401")
+Variations: May include alphanumeric characters
+
+
+Invoice Date
+
+Field name: "Date"
+Format: DD. Month YYYY (e.g., "1. März 2024")
+Variations: Possible language variations (German/English)
+
+
+Customer Number
+
+Field name: "Customer No"
+Format: Numeric string (e.g., "12345")
+
+
+Invoice Period
+
+Field name: "Invoice Period"
+Format: DD.MM.YYYY - DD.MM.YYYY (e.g., "01.02.2024 - 29.02.2024")
+
+
+Vendor Information
+
+Field name: "Vendor Name and Address"
+Format: Multi-line text (e.g., "CPB Software (Germany) GmbH - Im Bruch 3 - 63897 Miltenberg/Main")
+
+
+Customer Information
+
+Field name: "Customer Name and Address"
+Format: Multi-line text (e.g., "Musterkunde AG, Mr. John Doe, Musterstr. 23, 12345 Musterstadt")
+
+
+VAT Number
+
+Field name: "VAT No"
+Format: Alphanumeric string (e.g., "DE199378386")
+
+
+
+Table Data (Line Items)
+
+Service Description
+
+Field name: "Service Description"
+Format: Text (e.g., "Basic Fee wmView", "Transaction Fee T1")
+Variations: Multiple types of fees and services
+
+
+Quantity
+
+Field name: "quantity"
+Format: Integer
+
+
+Unit Price
+
+Field name: "Amount -without VAT-"
+Format: Currency (e.g., "130,00 €")
+Note: Uses comma as decimal separator
+
+
+Total Amount
+
+Field name: "Total Amount"
+Format: Currency (e.g., "130,00 €")
+Note: Not always present for each line item
+
+
+
+Summary Financials
+
+Total (Net)
+
+Field name: "Total"
+Format: Currency (e.g., "381,12 €")
+
+
+VAT Amount
+
+Field name: "VAT 19 %"
+Format: Currency (e.g., "72,41 €")
+Variation: VAT percentage may vary
+
+
+Gross Amount
+
+Field name: "Gross Amount incl. VAT"
+Format: Currency (e.g., "453,53 €")
+
+
+
+Additional Data
+
+Transaction Fee Details
+
+Field names: "T1", "T2", "T3", etc., and "G1", "G2", "G3", etc.
+Format: Table with query counts and amounts
+
+
+Payment Information
+
+Field names: "IBAN", "BIC"
+Formats: Standard IBAN and BIC formats
+
+
+
+Potential Variations
+
+Language: The invoice contains both German and English text, suggesting possible language variations.
+Currency: While this invoice uses Euro, other currencies might be used for different clients.
+Fee Structure: The complex fee structure (T1-T6, G1-G6) might vary between different types of services or clients.
+Layout: The position and order of information might vary in different invoice templates from the same or different vendors.
